@@ -14,6 +14,10 @@ Este projeto foi criado com fins educacionais e para demonstração de conceitos
 
 Este projeto é licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+## 🎮 Teste Você Mesmo
+
+Acesse: https://jkenteni.github.io/Login-AP-ESP32/
+
 ## 🤝 Contribuições
 
 Contribuições para o projeto são bem-vindas! Para colaborar:
